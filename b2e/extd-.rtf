@@ -1,0 +1,1762 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033\deflangfe1033{\fonttbl{\f0\fswiss\fprq2\fcharset0 Verdana;}{\f1\fmodern\fprq1\fcharset0 Courier New;}{\f2\fswiss\fprq2\fcharset0 Calibri;}{\f3\fnil\fcharset0 Calibri;}}
+{\colortbl ;\red0\green0\blue255;}
+{\*\generator Riched20 10.0.20348}{\*\mmathPr\mnaryLim0\mdispDef1\mwrapIndent1440 }\viewkind4\uc1 
+\pard\widctlpar\sb100\sa100\kerning36\b\f0\fs48 Extd\par
+\kerning0\fs27 AddExtension\par
+\cf1\fs20 Description\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Add a file name extension to the given string\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Syntax\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /addextension string extension\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Example\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /addextension test .txt ; (This will return "test.txt")\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Return value\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Returns the result in the variable %result%\par
+
+\pard\widctlpar\sb100\sa100\b\fs27 AesDecode\par
+\cf1\fs20 Description\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Decode the given file using the AES algorithm\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Syntax\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /aesdecode source destination key\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Example\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /aesdecode encoded.aes file.txt mykey\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Return value\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 This command has no return value\par
+
+\pard\widctlpar\sb100\sa100\b\fs27 AesEncode\par
+\cf1\fs20 Description\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Encode the given file using the AES algorithm\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Syntax\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /aesencode source destination key\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Example\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /aesencode file.txt encoded.aes mykey\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Return value\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 This command has no return value\par
+
+\pard\widctlpar\sb100\sa100\b\fs27 Ascii\par
+\cf1\fs20 Description\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Returns the ASCII value of the specified character\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Syntax\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /ascii character\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Example\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /ascii A ; (This will return 65)\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Return value\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Returns the result in the variable %result%\par
+
+\pard\widctlpar\sb100\sa100\b\fs27 Base64Decode\par
+\cf1\fs20 Description\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Decode the given file using the Base64 algorithm\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Syntax\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /base64decode source destination\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Example\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /base64decode encoded.b64 file.txt\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Return value\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 This command has no return value\par
+
+\pard\widctlpar\sb100\sa100\b\fs27 Base64Encode\par
+\cf1\fs20 Description\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Encode the given file using the Base64 algorithm\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Syntax\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /base64encode source destination\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Example\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /base64encode file.txt encoded.b64\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Return value\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 This command has no return value\par
+
+\pard\widctlpar\sb100\sa100\b\fs27 Bin\par
+\cf1\fs20 Description\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Convert a number to a string in binary format\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Syntax\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /bin number\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Example\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /bin 32 ; (This will return 100000)\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Return value\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Returns the result in the variable %result%\par
+
+\pard\widctlpar\sb100\sa100\b\fs27 BrowseForFile\par
+\cf1\fs20 Description\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Open a dialog box to browse for a file\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Syntax\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /browseforfile title defaultfile pattern position\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Example\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /browseforfile "Browse for a file" "" "EXE (*.exe)|*.exe|BAT (*.bat)|*.bat" 1\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Return value\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Returns the result in the variable %result%\par
+
+\pard\widctlpar\sb100\sa100\b\fs27 BrowseForFolder\par
+\cf1\fs20 Description\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Open a dialog box to browse for a folder\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Syntax\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /browseforfolder title startpath\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Example\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /browseforfolder "Browse for a folder" C:\\\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Return value\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Returns the result in the variable %result%\par
+
+\pard\widctlpar\sb100\sa100\b\fs27 Center\par
+\cf1\fs20 Description\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Center the console window horizontally and vertically\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Syntax\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /center\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Example\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /center\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Return value\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 This command has no return value\par
+
+\pard\widctlpar\sb100\sa100\b\fs27 ChangeExeIcon\par
+\cf1\fs20 Description\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Change the icon of an exe file\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Syntax\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /changeexeicon infile.exe outfile.exe iconfile.ico\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Example\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /changeexeicon infile.exe outfile.exe iconfile.ico\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Return value\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Returns the result in the variable %result%\par
+
+\pard\widctlpar\sb100\sa100\b\fs27 Char\par
+\cf1\fs20 Description\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Returns the character of the specified ASCII value\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Syntax\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /char value\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Example\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /char 65 ; (This will return A)\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Return value\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Returns the result in the variable %result%\par
+
+\pard\widctlpar\sb100\sa100\b\fs27 CloseWindow\par
+\cf1\fs20 Description\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Close the specified window\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Syntax\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /closewindow windowname\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Example\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /closewindow Calculator; (This will close calculator)\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Return value\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 This command has no return value\par
+
+\pard\widctlpar\sb100\sa100\b\fs27 CRC32\par
+\cf1\fs20 Description\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Calculate the CRC32 checksum of the given file\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Syntax\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /crc32 filename\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Example\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /crc32 myfile.txt; (This will calculate the CRC32 checksum of "myfile.txt")\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Return value\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Returns the result in the variable %result%\par
+
+\pard\widctlpar\sb100\sa100\b\fs27 DisableWindow\par
+\cf1\fs20 Description\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Disable the specified window\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Syntax\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /disablewindow windowname\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Example\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /disablewindow Calculator\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Return value\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 This command has no return value\par
+
+\pard\widctlpar\sb100\sa100\b\fs27 Download\par
+\cf1\fs20 Description\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Download a file from the given URL\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Syntax\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /download url filename\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Example\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /download {{\field{\*\fldinst{HYPERLINK http://www.f2ko.de/downloads/Bat_To_Exe_Converter.zip }}{\fldrslt{http://www.f2ko.de/downloads/Bat_To_Exe_Converter.zip\ul0\cf0}}}}\f1\fs20  Bat_To_Exe_Converter.zip\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Return value\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Returns the result (a value unequal to zero on success) in the variable %result%\par
+
+\pard\widctlpar\sb100\sa100\b\fs27 DownloadHeader\par
+\cf1\fs20 Description\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Download the HTTP header of the given URL\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Syntax\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /downloadheader url filename\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Example\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /downloadheader {{\field{\*\fldinst{HYPERLINK http://www.f2ko.de/downloads/Bat_To_Exe_Converter.zip }}{\fldrslt{http://www.f2ko.de/downloads/Bat_To_Exe_Converter.zip\ul0\cf0}}}}\f1\fs20  header.txt\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Return value\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 This command has no return value\par
+
+\pard\widctlpar\sb100\sa100\b\fs27 EnableWindow\par
+\cf1\fs20 Description\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Enable the specified window\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Syntax\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /enablewindow windowname\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Example\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /enablewindow Calculator\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Return value\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 This command has no return value\par
+
+\pard\widctlpar\sb100\sa100\b\fs27 FindExecutable\par
+\cf1\fs20 Description\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Retrieves the name of the executable (.exe) file associated with a specific document file\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Syntax\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /findexecutable file\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Example\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /findexecutable file.txt\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Return value\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Returns the result in the variable %result%\par
+
+\pard\widctlpar\sb100\sa100\b\fs27 FlashConsole\par
+\cf1\fs20 Description\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Flash the main console window\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Syntax\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /flashconsole count timeout value background\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Values\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 FLASHW_CAPTION : flash the window caption\line FLASHW_TRAY : flash the taskbar button\line FLASHW_ALL : flash the window caption and taskbar button\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Background\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 0\line 1 : flash continuously until the console comes to the foreground\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Example\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /flashconsole 60 1000 FLASHW_ALL 0\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Return value\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 This command has no return value\par
+
+\pard\widctlpar\sb100\sa100\b\fs27 FlashWindow\par
+\cf1\fs20 Description\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Flash the specified window\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Syntax\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /flashwindow windowname count timeout value background\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Values\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 FLASHW_CAPTION : flash the window caption\line FLASHW_TRAY : flash the taskbar button\line FLASHW_ALL : flash the window caption and taskbar button\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Background\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 0\line 1 : flash continuously until the window comes to the foreground\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Example\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /flashwindow Calculator 60 1000 FLASHW_ALL 0\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Return value\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 This command has no return value\par
+
+\pard\widctlpar\sb100\sa100\b\fs27 GetClipboardText\par
+\cf1\fs20 Description\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Returns the last pasted text in the clipboard\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Syntax\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /getclipboardtext\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Example\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /getclipboardtext\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Return value\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Returns the result in the variable %result%\par
+
+\pard\widctlpar\sb100\sa100\b\fs27 GetComputerName\par
+\cf1\fs20 Description\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Returns the computer name\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Syntax\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /getcomputername\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Example\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /getcomputername\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Return value\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Returns the result in the variable %result%\par
+
+\pard\widctlpar\sb100\sa100\b\fs27 GetConsoleTitle\par
+\cf1\fs20 Description\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Retrieves the title of the current console window\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Syntax\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /getconsoletitle\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Example\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /getconsoletitle\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Return value\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Returns the result in the variable %result%\par
+
+\pard\widctlpar\sb100\sa100\b\fs27 GetCPUName\par
+\cf1\fs20 Description\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Returns the CPU name\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Syntax\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /getcpuname\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Example\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /getcpuname\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Return value\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Returns the result in the variable %result%\par
+
+\pard\widctlpar\sb100\sa100\b\fs27 GetCursorPosX\par
+\cf1\fs20 Description\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Returns the X position of the mouse in the desktop\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Syntax\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /getcursorposx\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Example\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /getcursorposx\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Return value\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Returns the result in the variable %result%\par
+
+\pard\widctlpar\sb100\sa100\b\fs27 GetCursorPosY\par
+\cf1\fs20 Description\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Returns the Y position of the mouse in the desktop\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Syntax\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /getcursorposy\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Example\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /getcursorposy\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Return value\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Returns the result in the variable %result%\par
+
+\pard\widctlpar\sb100\sa100\b\fs27 GetDesktopHeight\par
+\cf1\fs20 Description\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Returns the height of the desktop\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Syntax\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /getdesktopheight\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Example\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /getdesktopheight\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Return value\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Returns the result in the variable %result%\par
+
+\pard\widctlpar\sb100\sa100\b\fs27 GetDesktopWidth\par
+\cf1\fs20 Description\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Returns the width of the desktop\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Syntax\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /getdesktopwidth\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Example\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /getdesktopwidth\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Return value\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Returns the result in the variable %result%\par
+
+\pard\widctlpar\sb100\sa100\b\fs27 GetExtension\par
+\cf1\fs20 Description\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Retrieves the extension of the specified path\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Syntax\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /getextension path\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Example\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /getextension C:\\test.txt ; (This will return "txt")\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Return value\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Returns the result in the variable %result%\par
+
+\pard\widctlpar\sb100\sa100\b\fs27 GetFileName\par
+\cf1\fs20 Description\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Retrieves the filename of the specified path\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Syntax\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /getfilename path\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Example\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /getfilename C:\\test.txt ; (This will return "test.txt")\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Return value\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Returns the result in the variable %result%\par
+
+\pard\widctlpar\sb100\sa100\b\fs27 GetMimeType\par
+\cf1\fs20 Description\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Retrieves the mime type of the given file extension\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Syntax\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /getmimetype extension\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Example\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /getmimetype txt\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Return value\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Returns the result in the variable %result%\par
+
+\pard\widctlpar\sb100\sa100\b\fs27 GetPath\par
+\cf1\fs20 Description\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Retrieves the path part of the specified path\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Syntax\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /getpath path\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Example\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /getpath C:\\path\\test.txt ; (This will return "C:\\path\\")\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Return value\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Returns the result in the variable %result%\par
+
+\pard\widctlpar\sb100\sa100\b\fs27 GetSpecialFolder\par
+\cf1\fs20 Description\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Retrieves the path of a special folder\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Syntax\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /getspecialfolder value\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Values\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 ADMINTOOLS\line ALTSTARTUP\line APPDATA\line BITBUCKET\line CDBURN_AREA\line COMMON_ADMINTOOLS\line COMMON_ALTSTARTUP\line COMMON_APPDATA\line COMMON_DESKTOPDIRECTORY\line COMMON_DOCUMENTS\line COMMON_FAVORITES\line COMMON_MUSIC\line COMMON_OEM_LINKS\line COMMON_PICTURES\line COMMON_PROGRAMS\line COMMON_STARTMENU\line COMMON_STARTUP\line COMMON_TEMPLATES\line COMMON_VIDEO\line COMPUTERSNEARME\line CONNECTIONS\line CONTROLS\line COOKIES\line DESKTOP\line DESKTOPDIRECTORY\line DRIVES\line FAVORITES\line FONTS\line HISTORY\line INTERNET\line INTERNET_CACHE\line LOCAL_APPDATA\line MYDOCUMENTS\line MYMUSIC\line MYPICTURES\line MYVIDEO\line NETHOOD\line NETWORK\line PERSONAL\line PRINTERS\line PRINTHOOD\line PROFILE\line PROGRAM_FILES\line PROGRAM_FILESX86\line PROGRAM_FILES_COMMON\line PROGRAM_FILES_COMMONX86\line PROGRAMS\line RECENT\line RESOURCES\line RESOURCES_LOCALIZED\line SENDTO\line STARTMENU\line STARTUP\line SYSTEM\line SYSTEMX86\line TEMPLATES\line WINDOWS\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Example\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /getspecialfolder DESKTOPDIRECTORY\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Return value\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Returns the result in the variable %result%\par
+
+\pard\widctlpar\sb100\sa100\b\fs27 GetSystemLanguage\par
+\cf1\fs20 Description\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Retrieves the system language\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Syntax\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /getsystemlanguage\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Example\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /getsystemlanguage\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Return value\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Returns the result in the variable %result%\par
+
+\pard\widctlpar\sb100\sa100\b\fs27 GetTickCount\par
+\cf1\fs20 Description\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Retrieves the number of milliseconds that have elapsed since the system was started\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Syntax\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /gettickcount\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Example\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /gettickcount\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Return value\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Returns the result in the variable %result%\par
+
+\pard\widctlpar\sb100\sa100\b\fs27 GetUserLanguage\par
+\cf1\fs20 Description\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Retrieves the user language\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Syntax\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /getuserlanguage\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Example\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /getuserlanguage\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Return value\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Returns the result in the variable %result%\par
+
+\pard\widctlpar\sb100\sa100\b\fs27 GetUserName\par
+\cf1\fs20 Description\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Returns the user name\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Syntax\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /getusername\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Example\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /getusername\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Return value\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Returns the result in the variable %result%\par
+
+\pard\widctlpar\sb100\sa100\b\fs27 Hex\par
+\cf1\fs20 Description\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Convert a number to a string in hexadecimal format\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Syntax\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /hex number\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Example\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /hex 1000 ; (This will return 3E8)\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Return value\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Returns the result in the variable %result%\par
+
+\pard\widctlpar\sb100\sa100\b\fs27 HideSelf\par
+\cf1\fs20 Description\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Hide the main console window\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Syntax\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /hideself\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Example\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /hideself\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Return value\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 This command has no return value\par
+
+\pard\widctlpar\sb100\sa100\b\fs27 HideWindow\par
+\cf1\fs20 Description\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Hide the specified window\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Syntax\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /hidewindow windowname\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Example\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /hidewindow Calculator ; (This will hide calculator)\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Return value\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 This command has no return value\par
+
+\pard\widctlpar\sb100\sa100\b\fs27 Input\par
+\cf1\fs20 Description\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Read a line from the console input\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Syntax\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /input\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Example\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /input\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Return value\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Returns the result in the variable %result%\par
+
+\pard\widctlpar\sb100\sa100\b\fs27 InputBox\par
+\cf1\fs20 Description\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Open an input box\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Syntax\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /inputbox title message default\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Example\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /inputbox Title "Enter the text below" "I'm the default input"\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Return value\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Returns the result in the variable %result%\par
+
+\pard\widctlpar\sb100\sa100\b\fs27 Is64Bit\par
+\cf1\fs20 Description\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Determine whether your computer is running a 32-bit version or 64-bit version of Windows\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Syntax\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /is64bit\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Example\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /is64bit\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Return value\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Returns the result (1 = 64Bit) in the variable %result%\par
+
+\pard\widctlpar\sb100\sa100\b\fs27 Left\par
+\cf1\fs20 Description\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Extract a substring of a string from the left side\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Syntax\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /left string length\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Example\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /left String 3 ; (This will return "Str")\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Return value\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Returns the result in the variable %result%\par
+
+\pard\widctlpar\sb100\sa100\b\fs27 LowerCase\par
+\cf1\fs20 Description\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Returns the given string converted into lower case characters\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Syntax\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /lowercase string\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Example\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /lowercase STRING ; (This will return "string")\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Return value\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Returns the result in the variable %result%\par
+
+\pard\widctlpar\sb100\sa100\b\fs27 LZMA\par
+\cf1\fs20 Description\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Compress the given file using the LZMA algorithm\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Syntax\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /lzma source destination\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Example\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /lzma file.txt file.lzma\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Return value\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 This command has no return value\par
+
+\pard\widctlpar\sb100\sa100\b\fs27 MakeAdmin\par
+\cf1\fs20 Description\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Add an administrator manifest to the exe\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Syntax\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /makeadmin infile.exe outfile.exe value\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Values\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 0 : keep existing resources\line 1 : delete existing resources\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Example\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /makeadmin infile.exe outfile.exe 0\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Return value\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Returns the result (on success a value unequal to 0) in the variable %result%\par
+
+\pard\widctlpar\sb100\sa100\b\fs27 MakeGuid\par
+\cf1\fs20 Description\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Create a GUID string\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Syntax\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /makeguid\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Example\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /makeguid\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Return value\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Returns the result in the variable %result%\par
+
+\pard\widctlpar\sb100\sa100\b\fs27 MakeShortcut\par
+\cf1\fs20 Description\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Create a shortcut of the given file\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Syntax\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /makeshortcut source shortcut arguments description workingdirectory icon\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Example\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /makeshortcut "%~f0" "%~dp0Shortcut.lnk" "Arg1 Arg2 Arg3" "My Shortcut" "%~dp0" "%~f0"\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Return value\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 This command has no return value\par
+
+\pard\widctlpar\sb100\sa100\b\fs27 MakeToolWindow\par
+\cf1\fs20 Description\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Change the window style to a tool window style\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Syntax\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /maketoolwindow windowname\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Example\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /maketoolwindow Calculator\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Return value\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 This command has no return value\par
+
+\pard\widctlpar\sb100\sa100\b\fs27 MaskedInput\par
+\cf1\fs20 Description\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Read a line from the console while hiding the input\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Syntax\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /maskedinput\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Example\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /maskedinput\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Return value\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Returns the result in the variable %result%\par
+
+\pard\widctlpar\sb100\sa100\b\fs27 MaskedInputBox\par
+\cf1\fs20 Description\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Open an input box while hiding the input\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Syntax\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /maskedinputbox title message default\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Example\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /maskedinputbox Title "Enter the text below" "I'm the default input"\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Return value\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Returns the result in the variable %result%\par
+
+\pard\widctlpar\sb100\sa100\b\fs27 MaximizeWindow\par
+\cf1\fs20 Description\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Maximize the specified window\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Syntax\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /maximizewindow windowname\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Example\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /maximizewindow Calculator\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Return value\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 This command has no return value\par
+
+\pard\widctlpar\sb100\sa100\b\fs27 MD5\par
+\cf1\fs20 Description\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Returns the MD5 fingerprint of the given file\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Syntax\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /md5 filename\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Example\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /md5 example.txt\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Return value\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Returns the result in the variable %result%\par
+
+\pard\widctlpar\sb100\sa100\b\fs27 MessageBox\par
+\cf1\fs20 Description\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Display a messagebox\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Syntax\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /messagebox titel text flag\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Example\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /messagebox Error Message 16\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Return value\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Returns the result in the variable %result%\par
+
+\pard\widctlpar\sb100\sa100\b\fs27 MessageBoxCheck\par
+\cf1\fs20 Description\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Display a messagebox that gives the option of suppressing further occurrences\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Syntax\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /messageboxcheck titel text flag guid\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Example\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /messageboxcheck Titel Message 0 \{73E8105A-7AD2-4335-B694-94F837A38E79\}\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Return value\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Returns the result in the variable %result%\par
+
+\pard\widctlpar\sb100\sa100\b\fs27 Mid\par
+\cf1\fs20 Description\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Extract a substring from a string at the specified position\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Syntax\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /mid string position\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Example\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /mid String 3 ; (This will return "ring")\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Return value\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Returns the result in the variable %result%\par
+
+\pard\widctlpar\sb100\sa100\b\fs27 MinimizeWindow\par
+\cf1\fs20 Description\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Minimize the specified window\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Syntax\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /minimizewindow windowname\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Example\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /minimizewindow Calculator\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Return value\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 This command has no return value\par
+
+\pard\widctlpar\sb100\sa100\b\fs27 MouseClick\par
+\cf1\fs20 Description\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Simulate mouse clicks\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Syntax\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /mouseclick value\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Values\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 -lc : left click\line -rc : right click\line -ldc : left double click\line -rdc : right double click\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Example\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /mouseclick -rc ; (This will simulate a right click)\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Return value\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 This command has no return value\par
+
+\pard\widctlpar\sb100\sa100\b\fs27 MoveWindow\par
+\cf1\fs20 Description\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Move the specified window\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Syntax\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /movewindow windowname x y\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Example\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /movewindow Calculator 100 100\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Return value\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 This command has no return value\par
+
+\pard\widctlpar\sb100\sa100\b\fs27 OSVersion\par
+\cf1\fs20 Description\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Retrieve the version of the operating system\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Syntax\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /osversion\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Example\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /osversion\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Return value\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Returns the result in the variable %result%\par
+
+\pard\widctlpar\sb100\sa100\b\fs27 Play\par
+\cf1\fs20 Description\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Play the specified WAVE (.wav) file\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Syntax\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /play wavfile\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Example\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /play sample.wav\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Return value\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Returns the result in the variable %result%\par
+
+\pard\widctlpar\sb100\sa100\b\fs27 Random\par
+\cf1\fs20 Description\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Generate a random number\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Syntax\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /random maximum\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Example\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /random 1000\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Return value\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Returns the result in the variable %result%\par
+
+\pard\widctlpar\sb100\sa100\b\fs27 RC4\par
+\cf1\fs20 Description\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Crypt the given file using the RC4 algorithm\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Syntax\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /rc4 source destination key\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Example\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /rc4 file.txt file.rc4 samplekey\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Return value\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 This command has no return value\par
+
+\pard\widctlpar\sb100\sa100\b\fs27 ReadPreferenceValue\par
+\cf1\fs20 Description\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Read a value associated with the specified key from the preference file\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Syntax\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /readpreferencevalue filename key\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Example\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /readpreferencevalue settings.ini appname\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Return value\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Returns the result in the variable %result%\par
+
+\pard\widctlpar\sb100\sa100\b\fs27 RemoveExtension\par
+\cf1\fs20 Description\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Remove the extension from the given string\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Syntax\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /removeextension string\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Example\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /removeextension test.txt ; (This will return "test")\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Return value\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Returns the result in the variable %result%\par
+
+\pard\widctlpar\sb100\sa100\b\fs27 RenameExtension\par
+\cf1\fs20 Description\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Replace the extension of the given string with a new one\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Syntax\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /renameextension string extension\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Example\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /renameextension test.txt bat ; (This will return "test.bat")\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Return value\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Returns the result in the variable %result%\par
+
+\pard\widctlpar\sb100\sa100\b\fs27 ResizeWindow\par
+\cf1\fs20 Description\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Resize the specified window\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Syntax\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /resizewindow windowname x y width height\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Example\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /resizewindow Calculator 0 0 100 100\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Return value\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 This command has no return value\par
+
+\pard\widctlpar\sb100\sa100\b\fs27 Right\par
+\cf1\fs20 Description\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Extract a substring of a string from the right side\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Syntax\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /right string length\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Example\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /right String 3\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Return value\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Returns the result in the variable %result%\par
+
+\pard\widctlpar\sb100\sa100\b\fs27 SaveFileDialog\par
+\cf1\fs20 Description\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Open a dialog box to save a file\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Syntax\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /savefiledialog title defaultfile pattern\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Example\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /savefiledialog "Save file as" "" "All Files (*.*)|*.*"\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Return value\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Returns the result in the variable %result%\par
+
+\pard\widctlpar\sb100\sa100\b\fs27 Screenshot\par
+\cf1\fs20 Description\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Take a screenshot of the desktop and save it as the given filename\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Syntax\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /screenshot filename\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Example\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /screenshot desktop.bmp\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Return value\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 This command has no return value\par
+
+\pard\widctlpar\sb100\sa100\b\fs27 SendKeys\par
+\cf1\fs20 Description\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Simulate text input\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Syntax\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /sendkeys text\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Example\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /sendkeys text\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Return value\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 This command has no return value\par
+
+\pard\widctlpar\sb100\sa100\b\fs27 SetClipboardText\par
+\cf1\fs20 Description\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Store the given string into the clipboard\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Syntax\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /setclipboardtext text\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Example\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /setclipboardtext text\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Return value\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 This command has no return value\par
+
+\pard\widctlpar\sb100\sa100\b\fs27 SetConsoleTransparency\par
+\cf1\fs20 Description\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Set the transparency of the main console window\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Syntax\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /setconsoletransparency value\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Values\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 0-100\line 0 : transparent\line 100 : opaque\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Example\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /setconsoletransparency 50\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Return value\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 This command has no return value\par
+
+\pard\widctlpar\sb100\sa100\b\fs27 SetCursor\par
+\cf1\fs20 Description\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Move the cursor to the specified screen coordinates\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Syntax\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /setcursor x y\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Example\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /setcursor 100 100\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Return value\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 This command has no return value\par
+
+\pard\widctlpar\sb100\sa100\b\fs27 SetForegroundWindow\par
+\cf1\fs20 Description\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Bring the specified window to the foreground\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Syntax\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /setforegroundwindow windowname\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Example\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /setforegroundwindow Calculator\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Return value\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 This command has no return value\par
+
+\pard\widctlpar\sb100\sa100\b\fs27 SetLeft\par
+\cf1\fs20 Description\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Pad a string to the left by adding the specified character to fit the length\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Syntax\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /setleft string length character\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Example\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /setleft test 10 * ; (This will return "test******")\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Return value\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Returns the result in the variable %result%\par
+
+\pard\widctlpar\sb100\sa100\b\fs27 SetRight\par
+\cf1\fs20 Description\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Pad a string to the right by adding the specified character to fit the length\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Syntax\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /setright string length character\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Example\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /setright test 10 * ; (This will return "******test")\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Return value\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Returns the result in the variable %result%\par
+
+\pard\widctlpar\sb100\sa100\b\fs27 SetWindowTitle\par
+\cf1\fs20 Description\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Set the title of the specified window\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Syntax\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /setwindowtitle windowname title\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Example\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /setwindowtitle Calculator NewTitle\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Return value\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 This command has no return value\par
+
+\pard\widctlpar\sb100\sa100\b\fs27 SetWindowTransparency\par
+\cf1\fs20 Description\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Set the transparency of the specified window\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Syntax\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /setwindowtransparency windowname value\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Values\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 0-100\line 0 : transparent\line 100 : opaque\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Example\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /setwindowtransparency Calculator 50\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Return value\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 This command has no return value\par
+
+\pard\widctlpar\sb100\sa100\b\fs27 SHA1\par
+\cf1\fs20 Description\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Returns the SHA1 fingerprint of the given file\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Syntax\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /sha1 filename\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Example\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /sha1 example.txt\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Return value\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Returns the result in the variable %result%\par
+
+\pard\widctlpar\sb100\sa100\b\fs27 ShowSelf\par
+\cf1\fs20 Description\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Show the main console window\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Syntax\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /showself\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Example\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /showself\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Return value\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 This command has no return value\par
+
+\pard\widctlpar\sb100\sa100\b\fs27 ShowWindow\par
+\cf1\fs20 Description\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Show the previously hidden window again\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Syntax\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /showwindow windowname\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Example\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /showwindow Calculator\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Return value\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 This command has no return value\par
+
+\pard\widctlpar\sb100\sa100\b\fs27 Sleep\par
+\cf1\fs20 Description\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Wait the specified number of milliseconds\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Syntax\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /sleep milliseconds\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Example\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /sleep 2000\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Return value\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 This command has no return value\par
+
+\pard\widctlpar\sb100\sa100\b\fs27 Speak\par
+\cf1\fs20 Description\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Speak the specified text with the default voice\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Syntax\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /speak text speed\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Example\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /speak "This is a test" 2\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Return value\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 This command has no return value\par
+
+\pard\widctlpar\sb100\sa100\b\fs27 StrCount\par
+\cf1\fs20 Description\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Count the number of times a substring occurs in a string\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Syntax\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /strcount string stringtocount\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Example\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /strcount "This is the sample string" is\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Return value\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Returns the result in the variable %result%\par
+
+\pard\widctlpar\sb100\sa100\b\fs27 StrPos\par
+\cf1\fs20 Description\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Search for the first occurrence of substring inside a string\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Syntax\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /strpos string searchstring\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Example\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /strpos "a sample string" "sample"\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Return value\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Returns the result in the variable %result%\par
+
+\pard\widctlpar\sb100\sa100\b\fs27 StrReplace\par
+\cf1\fs20 Description\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Replace some characters with some other characters in a string\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Syntax\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /strreplace string searchstring replacestring\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Example\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /strreplace "a sample string" sample replaced\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Return value\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Returns the result in the variable %result%\par
+
+\pard\widctlpar\sb100\sa100\b\fs27 StrRev\par
+\cf1\fs20 Description\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Reverse a string\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Syntax\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /strrev string\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Example\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /strrev "string to reverse"\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Return value\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Returns the result in the variable %result%\par
+
+\pard\widctlpar\sb100\sa100\b\fs27 StrSplit\par
+\cf1\fs20 Description\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Split a string using a separator\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Syntax\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /strsplit string index separator\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Example\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /strsplit "string;to;split" 1 ";"\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Return value\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Returns the result in the variable %result%\par
+
+\pard\widctlpar\sb100\sa100\b\fs27 Tempfile\par
+\cf1\fs20 Description\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Creates a name for a temporary file\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Syntax\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /tempfile directory\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Example\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /tempfile %temp%\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Return value\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Returns the result in the variable %result%\par
+
+\pard\widctlpar\sb100\sa100\b\fs27 Trim\par
+\cf1\fs20 Description\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Remove the specified character at the beginning and at the end of the string\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Syntax\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /trim string character\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Example\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /trim ****test**** * ; (This will return "test")\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Return value\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Returns the result in the variable %result%\par
+
+\pard\widctlpar\sb100\sa100\b\fs27 TrimLeft\par
+\cf1\fs20 Description\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Remove the specified character at the beginning of the string\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Syntax\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /trimleft string character\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Example\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /trimleft ****test**** * ; (This will return "test****")\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Return value\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Returns the result in the variable %result%\par
+
+\pard\widctlpar\sb100\sa100\b\fs27 TrimRight\par
+\cf1\fs20 Description\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Remove the specified character at the end of the string\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Syntax\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /trimright string character\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Example\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /trimright ****test**** * ; (This will return "****test")\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Return value\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Returns the result in the variable %result%\par
+
+\pard\widctlpar\sb100\sa100\b\fs27 UnLZMA\par
+\cf1\fs20 Description\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Decompress the given file using the LZMA algorithm\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Syntax\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /unlzma source destination\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Example\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /unlzma file.lzma file.txt\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Return value\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 This command has no return value\par
+
+\pard\widctlpar\sb100\sa100\b\fs27 UnZip\par
+\cf1\fs20 Description\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Extract the contents of the specified Zip archive to the destination folder\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Syntax\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /unzip zipfile destination\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Example\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /unzip sample.zip c:\\\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Return value\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 This command has no return value\par
+
+\pard\widctlpar\sb100\sa100\b\fs27 UpperCase\par
+\cf1\fs20 Description\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Returns the given string converted into upper case characters\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Syntax\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /uppercase string\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Example\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /uppercase string ; (This will return "STRING")\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Return value\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Returns the result in the variable %result%\par
+
+\pard\widctlpar\sb100\sa100\b\fs27 WindowOnTop\par
+\cf1\fs20 Description\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Make the window stay on top\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Syntax\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /windowontop windowname\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Example\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /windowontop Calculator\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Return value\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 This command has no return value\par
+
+\pard\widctlpar\sb100\sa100\b\fs27 WritePreferenceValue\par
+\cf1\fs20 Description\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Write a value associated with the specified key to the preference file\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Syntax\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /writepreferencevalue filename key value\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Example\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /writepreferencevalue settings.ini appname "myapp 1.0"\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Return value\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 This command has no return value\par
+
+\pard\widctlpar\sb100\sa100\b\fs27 Zip\par
+\cf1\fs20 Description\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 Add and compress the file/folder to the specified Zip archive\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Syntax\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /zip filetozip zipfile\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Example\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0\f1 %extd% /zip sample.txt packed.zip\f0\par
+
+\pard\widctlpar\sb100\sa100\cf1\b Return value\par
+
+\pard\widctlpar\li600\sb100\sa100\cf0\b0 This command has no return value\par
+
+\pard\widctlpar\sa160\sl252\slmult1\f2\fs22\par
+
+\pard\sa200\sl276\slmult1\f3\lang9\par
+}
+ 
